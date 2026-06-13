@@ -1,0 +1,167 @@
+/* ================= BODY ================= */
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif, arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= VIDEO NỀN ================= */
+video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: linear-gradient(135deg, #ffc3e8, #c3e7ff);
+  color: white;
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================= NAV ================= */
+nav {
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background: linear-gradient(90deg,#fff7ad,#ffa9f9);
+}
+
+/* ================= BÌA ================= */
+.bia {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.biasach {
+  width: min(80%, 350px);
+  aspect-ratio: 3 / 4;
+  background: url("https://picsum.photos/400/600?random=10") center/cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: bold;
+  padding-bottom: 5%;
+  transition: 0.3s;
+}
+
+.biasach:hover {
+  transform: scale(1.05);
+}
+
+/* ================= ALBUM ================= */
+.album {
+  display: none;
+  padding: 5%;
+  color: white;
+  max-width: 1100px;
+  margin: auto;
+  overflow-x: auto; /* mobile sẽ kéo ngang thay vì vỡ layout */
+}
+
+/* ===== Khung 2 trang như sách ===== */
+.trang {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  min-width: 700px; /* đảm bảo luôn đủ 2 trang */
+}
+
+/* Trang trái */
+.trangtrai {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Trang phải */
+.trangphai {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.trangphai img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.trangphai img:hover {
+  transform: scale(1.05);
+}
+
+
+/* ===== Nút bên dưới ===== */
+.nut {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  min-width: 700px; /* đồng bộ với .trang */
+}
+
+button.album-btn {
+  flex: 1;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.album-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ================= XEM ẢNH PHÓNG TO ================= */
+#vungtoi {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vungtoi img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
