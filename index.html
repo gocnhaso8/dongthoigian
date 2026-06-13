@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dòng thời gian</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- VIDEO -->
+<video autoplay muted loop>
+  <source src="Anhcuaweb/anhdong.mp4" type="video/mp4">
+</video>
+
+<!-- Phần header -->
+<header>
+  <h1><img src="Anhcuaweb/gocnhaso8.png" width="35"> - Góc nhà số 8</h1>
+  <div class="search-bar">
+    <input type="text" placeholder="Tìm kiếm...">
+    <button>🔍</button>
+  </div>
+</header>
+
+<!-- Thanh navbar -->
+<nav>
+  <a href="https://nguyenduongquoc8a6ntb.github.io/12A8-k59-website/"> Trang chủ </a>
+  <a href="https://dthanhlong442-hub.github.io/danhsach/"> Danh sách </a>
+  <a href="https://nguyenduongquoc8a6ntb.github.io/dongthoigian/"> Dòng thời gian </a>
+  <a href="https://www.youtube.com/@A8-K59THPT-LTK" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" width="100">
+  </a>
+  <a href="#">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_(2020).svg" width="30">
+  </a>
+</nav>
+
+<!-- BÌA -->
+<section class="bia" id="bia">
+  <div class="biasach" onclick="moAlbum()">Album A8-K59</div>
+</section>
+
+<!-- ALBUM -->
+<section class="album" id="album">
+  
+  <div class="trang">
+    
+    <div class="trangtrai">
+      <h1 id="td"> </h1>
+      <p id="text"> </p>
+    </div>
+    
+    <div class="trangphai" id="khungAnh"> </div>
+    
+  </div>
+  
+  <div class="nut">
+    <button class="album-btn" onclick="truoc()">⇦ Trước</button>
+    <button class="album-btn" onclick="sau()">Sau ⇨</button>
+  </div>
+</section>
+
+<!-- Clip theo dòng thời gian -->
+<div class="clip" id="clip">  </div>
+  
+<script src="script.js">  </script>
+
+</body>
+</html>
